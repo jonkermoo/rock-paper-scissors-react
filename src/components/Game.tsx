@@ -14,6 +14,10 @@ export default function Game() {
     setPlayerChoice(choice);
     setCpuChoice(cpu);
 
+    // bruh I can't run npm run build with yellow erros
+    console.log("Player: " + playerChoice);
+    console.log("CPU: " + cpuChoice);
+
     const outcome = decideWinner(choice, cpu);
     ResultAlert(outcome);
   };
