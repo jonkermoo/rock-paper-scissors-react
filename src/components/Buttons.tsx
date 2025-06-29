@@ -1,3 +1,5 @@
+import "../styles/Buttons.css";
+
 // -This will be used as an object holding certain values that will be passed
 // into a function
 // -it holds a string named "label" that can only be rock, paper, or scissor
