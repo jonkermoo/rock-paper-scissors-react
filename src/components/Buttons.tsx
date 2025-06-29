@@ -1,4 +1,7 @@
 import "../styles/Buttons.css";
+import rock from "../assets/images/rock.png";
+import paper from "../assets/images/paper.png";
+import scissor from "../assets/images/scissor.png";
 
 // -This will be used as an object holding certain values that will be passed
 // into a function
@@ -20,7 +23,13 @@ type Props = {
 export default function Button({ label, onSelect }: Props) {
   return (
     <button className="button" onClick={() => onSelect(label)}>
-      {label.toUpperCase()}
+      {label === "rock" && <img src={rock} alt="rock" className="icon"></img>}
+      {label === "paper" && (
+        <img src={paper} alt="paper" className="icon"></img>
+      )}
+      {label === "scissors" && (
+        <img src={scissor} alt="scissor" className="icon"></img>
+      )}
     </button>
   );
 }
