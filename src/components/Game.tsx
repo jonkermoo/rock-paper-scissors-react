@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { decideWinner, randomChoice, type Choice } from "../utls/Logic";
+import "../styles/Game.css";
 import ResultAlert from "./Alert";
 import Button from "./Buttons";
 
